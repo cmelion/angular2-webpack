@@ -78,6 +78,10 @@ It will start a local server using `webpack-dev-server` which will watch, build 
 
 ## Developing
 
+### How do I async load a component?
+ * see wiki [How-do-I-async-load-a-component-with-AsyncRoute](https://github.com/AngularClass/angular2-webpack-starter/wiki/How-do-I-async-load-a-component-with-AsyncRoute)
+
+
 ### Add new components, services, pipes with Angular 2 cli
 
 * `npm install -g angular-cli` to install Angular 2 cli
