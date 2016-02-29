@@ -1,3 +1,4 @@
+/// src/app/index.ts
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {FORM_PROVIDERS} from 'angular2/common';
@@ -6,7 +7,7 @@ import '../style/app.scss';
 
 import {Api} from './services/api/index';
 import {Home} from './components/home/index';
-import {About} from "./components/about/index";
+//import {About} from "./components/about/index";
 
 /*
  * App Component
@@ -21,8 +22,9 @@ import {About} from "./components/about/index";
   template: require('./index.html')
 })
 @RouteConfig([
-  {path: '/', component: Home, name: 'Home'},
-  {path: '/About', component: About, name: 'About'}
+    {path: '/', component: Home, name: 'Home'},
+    // Async load a component using Webpack's require with es6-promise-loader
+    { path: '/about', loader: () => require('./components/about/index')('About'), name: 'About' }
 ])
 export class App {
   url: string = 'https://github.com/ocombe/ng2-webpack';
