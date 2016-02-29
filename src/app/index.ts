@@ -7,7 +7,7 @@ import '../style/app.scss';
 
 import {Api} from './services/api';         // ./services/api/index.ts
 import {Home} from './components/home';     // ./components/home/index.ts
-//import {About} from "./components/about"; // About is an async rout configured via @RouteConfig
+//import {About} from "./components/about"; // About is an async route configured via @RouteConfig
 
 /*
  * App Component
