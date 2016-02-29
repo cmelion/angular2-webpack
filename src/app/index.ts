@@ -7,7 +7,7 @@ import '../style/app.scss';
 
 import {Api} from './services/api';
 import {Home} from './components/home';
-//import {About} from "./components/about/index";
+//import {About} from "./components/about";
 
 /*
  * App Component
