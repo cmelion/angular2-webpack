@@ -19,7 +19,7 @@ import {Home} from './components/home';
   directives: [...ROUTER_DIRECTIVES],
   pipes: [],
   styles: [require('./style.scss')],
-  template: require('./index.html')
+  template: require('./template.html')
 })
 @RouteConfig([
     {path: '/', component: Home, name: 'Home'},
