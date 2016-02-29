@@ -5,9 +5,9 @@ import {FORM_PROVIDERS} from 'angular2/common';
 
 import '../style/app.scss';
 
-import {Api} from './services/api';
-import {Home} from './components/home';
-//import {About} from "./components/about";
+import {Api} from './services/api';         // ./services/api/index.ts
+import {Home} from './components/home';     // ./components/home/index.ts
+//import {About} from "./components/about"; // About is an async rout configured via @RouteConfig
 
 /*
  * App Component
